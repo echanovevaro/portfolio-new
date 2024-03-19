@@ -25,8 +25,8 @@ export default function Home() {
           className="absolute top-0 right-0 w-[450px] h-screen"
           src="/Mesa de trabajo 1.png"
         /> */}
-        <div className="h-screen w-[320px] absolute top-0 right-0 overflow-hidden">
-          <div className="bg-gradient-to-r from-black to-transparent z-[10] h-screen w-[320px] absolute top-0 right-0"></div>
+        <div className="h-screen w-[300px] absolute top-0 right-0 overflow-hidden">
+          <div className="bg-gradient-to-r from-black to-transparent z-[10] h-screen w-[300px] absolute top-0 right-0"></div>
           <video
             muted
             autoPlay
