@@ -325,6 +325,8 @@ export default function Home() {
             /> */}
             <video
               autoPlay
+              muted
+              playsInline
               loop
               preload="auto"
               className="absolute z-10 w-[70%] top-[50%] left-0 h-auto border-neutral-700 border-[6px] rounded-lg hover:scale-150 hover:z-20 transition ease-in duration-700 origin-bottom-left"
@@ -333,6 +335,8 @@ export default function Home() {
 
             <video
               autoPlay
+              muted
+              playsInline
               loop
               preload="auto"
               className="absolute w-[90%] top-[10%] right-0 h-auto border-neutral-700 border-[6px] rounded-lg hover:scale-150 hover:z-20 transition ease-in duration-700"
@@ -341,6 +345,8 @@ export default function Home() {
 
             <video
               autoPlay
+              muted
+              playsInline
               loop
               preload="auto"
               className="absolute z-10 w-[20%] top-[55%] right-[15%] h-auto border-neutral-700 border-[6px] rounded-lg hover:scale-150 hover:z-20 transition ease-in duration-700 origin-bottom-right"
