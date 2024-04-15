@@ -295,7 +295,7 @@ export default function Home() {
         </div>
       </section>
       <section className="w-full h-[100vh] text-sm">
-        <div className="text-white  font-extralight absolute landscape:w-[calc(47*80vh/21)] w-[calc(21*80vh/39)] h-[80vh] top-[110vh] landscape:left-[5vw] left-2 grid landscape:grid-cols-[8fr_1fr_1fr_3fr_21fr_8fr_2fr_3fr] landscape:grid-rows-[5fr_1fr_2fr_5fr_2fr_1fr_5fr] grid-cols-[5fr_1fr_2fr_5fr_1fr_2fr_5fr] grid-rows-[8fr_2fr_3fr_21fr_2fr_3fr] overflow-hidden">
+        <div className="text-white  font-extralight absolute landscape:w-[calc(47*80vh/21)] w-[calc(21*80vh/39)] h-[80vh] top-[110vh] landscape:left-[5vw] left-2 grid landscape:grid-cols-[8fr_1fr_1fr_3fr_21fr_8fr_2fr_3fr] landscape:grid-rows-[5fr_1fr_2fr_5fr_2fr_1fr_5fr] grid-cols-[5fr_1fr_2fr_5fr_1fr_2fr_5fr] grid-rows-[8fr_2fr_3fr_21fr_2fr_3fr]">
           <div className="col-start-1 col-end-4 row-start-1 row-end-2 landscape:col-start-1 landscape:col-end-2 landscape:row-start-1 landscape:row-end-4 rounded-full bg-white bg-opacity-15 flex items-center justify-end border border-neutral-700 shadow-md">
             <h1 className="landscape:mr-10 mr-4 tracking-wider landscape:mt-[2rem] mt-[0.5rem] uppercase lg:text-lg text-sm">
               <span className="font-medium">álvaro</span> riaño
@@ -315,7 +315,7 @@ export default function Home() {
           <div className="col-start-3 col-end-4 row-start-2 row-end-3 landscape:col-start-2 landscape:col-end-3 landscape:row-start-2 landscape:row-end-3 rounded-full border border-white border-opacity-20"></div>
           <div className="col-start-2 col-end-4 row-start-3 row-end-4 rounded-full bg-white bg-opacity-50"></div>
           <div className="portrait:hidden col-start-4 col-end-5 row-start-2 row-end-4 rounded-full border border-white border-opacity-20"></div>
-          <div className=" relative col-start-1 col-end-8 row-start-4 row-end-5 landscape:col-start-5 landscape:col-end-6 landscape:row-start-1 landscape:row-end-8 rounded-full border border-white border-opacity-20 flex items-center justify-center landscape:bg-white landscape:bg-opacity-[5%]">
+          <div className="container relative col-start-1 col-end-8 row-start-4 row-end-5 landscape:col-start-5 landscape:col-end-6 landscape:row-start-1 landscape:row-end-8 rounded-full flex items-center justify-center">
             {/* <div className="slide landscape:bg-[url('/desktop-computer-laptop-tablet-and-smartphone-psd.png')] portrait:bg-[url('/desktop-computer-laptop-tablet-and-smartphone-12-04-movil.png')] landscape:bg-[2rem] portrait:bg-[1rem] bg-contain bg-no-repeat absolute top-0 left-0 w-full h-full"></div> */}
             {/* <div className="slide landscape:bg-[url('/desktop-computer-laptop-tablet-and-smartphone-psd.png')] portrait:bg-[url('/desktop-computer-laptop-tablet-and-smartphone-12-04-movil.png')] landscape:bg-[2rem] portrait:bg-[1rem] bg-contain bg-no-repeat absolute top-0 left-0 w-full h-full"></div> */}
             {/* <img
@@ -323,27 +323,36 @@ export default function Home() {
               src={`/desktop-computer-laptop-tablet-and-smartphone-psd.png`}
               alt="hectoromero"
             /> */}
-            <video
-              autoPlay
-              muted
-              playsInline
-              loop
-              preload="auto"
-              className="absolute z-10 w-[70%] top-[50%] left-0 h-auto border-neutral-700 border-[6px] rounded-lg hover:scale-150 hover:z-20 transition ease-in duration-700 origin-bottom-left"
-              src="/ScreenRecorderProject7 (online-video-cutter.com) (1).mp4"
-            />
 
             <video
+              id="video"
               autoPlay
               muted
               playsInline
               loop
               preload="auto"
-              className="absolute w-[90%] top-[10%] right-0 h-auto border-neutral-700 border-[6px] rounded-lg hover:scale-150 hover:z-20 transition ease-in duration-700"
+              className="absolute z-10 w-[70%] top-[50%] left-0 h-auto border-neutral-700 border-[6px] rounded-lg transition ease-in duration-700 origin-bottom-left"
+              src="/ScreenRecorderProject7 (online-video-cutter.com) (1).mp4"
+            />
+            <div
+              className="transition ease-out duration-700 absolute z-[1] w-full h-full rounded-full landscape:bg-white landscape:bg-opacity-[5%] border border-white border-opacity-20 backdrop-blur"
+              id="video-bg"
+            >
+              {" "}
+            </div>
+            <video
+              id="video2"
+              autoPlay
+              muted
+              playsInline
+              loop
+              preload="auto"
+              className="absolute z-[1] w-[90%] top-[10%] right-0 h-auto border-neutral-700 border-[6px] rounded-lg hover:scale-110 hover:z-20 transition ease-in duration-700"
               src="/ScreenRecorderProject5_1.mp4"
             />
 
             <video
+              id="video3"
               autoPlay
               muted
               playsInline

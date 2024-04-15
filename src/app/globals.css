@@ -285,6 +285,16 @@ section {
   margin-left: -50%;
 }
 
+#video:hover {
+  transform: scale(150%);
+  z-index: 20;
+}
+
+.container:has(video:hover) #video-bg {
+  z-index: 19 !important;
+  transform: scale(130%);
+}
+
 .slider .slide {
   animation: slide 4s infinite;
 }
