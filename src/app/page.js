@@ -18,6 +18,13 @@ export default function Home() {
     [filter]
   )
 
+  const scroll = () => {
+    window.scrollTo({
+      top: window.scrollY + window.innerHeight,
+      behavior: "smooth",
+    })
+  }
+
   useEffect(() => {
     class Blob {
       constructor(el) {
@@ -289,7 +296,10 @@ export default function Home() {
             <div className="text lg:text-2xl text-lg font-extralight absolute top-[59%] left-[10%]" />
           </div>
           <div className="col-start-6 col-end-7 row-start-5 row-end-6 landscape:col-start-6 landscape:col-end-7 landscape:row-start-5 landscape:row-end-7 rounded-full border border-white border-opacity-20"></div>
-          <div className="col-start-7 col-end-8 row-start-5 row-end-7 landscape:col-start-7 landscape:col-end-8 landscape:row-start-6 landscape:row-end-7 rounded-full bg-white bg-opacity-[2%] rotate-90 flex items-center justify-center">
+          <div
+            className="col-start-7 col-end-8 row-start-5 row-end-7 landscape:col-start-7 landscape:col-end-8 landscape:row-start-6 landscape:row-end-7 rounded-full bg-white bg-opacity-[2%] rotate-90 flex items-center justify-center transition ease-out duration-500 hover:border hover:border-white hover:border-opacity-20 hover:bg-opacity-5 cursor-pointer"
+            onClick={scroll}
+          >
             scroll
             <div className="line" />
           </div>
@@ -332,7 +342,7 @@ export default function Home() {
               playsInline
               loop
               preload="auto"
-              className="absolute z-10 w-[70%] top-[50%] left-0 h-auto border-neutral-700 border-[4px] rounded-lg transition ease-in duration-700 origin-bottom-left"
+              className="absolute z-10 w-[70%] top-[40%] portrait:top-[45%] right-[5%] h-auto border-neutral-700 border-[4px] rounded-lg transition ease-in duration-700 origin-bottom-right"
               src="/ScreenRecorderProject7 (online-video-cutter.com) (1).mp4"
             />
             <div
@@ -348,7 +358,7 @@ export default function Home() {
               playsInline
               loop
               preload="auto"
-              className="absolute z-[1] w-[90%] top-[10%] right-0 h-auto border-neutral-700 border-[4px] rounded-lg hover:scale-110 hover:z-20 transition ease-in duration-700"
+              className="absolute z-[1] w-[80%] top-[10%] right-[20%] h-auto border-neutral-700 border-[4px] rounded-lg hover:scale-125 hover:z-20 transition ease-in duration-700 origin-top-left"
               src="/ScreenRecorderProject5_1.mp4"
             />
 
@@ -359,7 +369,7 @@ export default function Home() {
               playsInline
               loop
               preload="auto"
-              className="absolute z-10 w-[20%] top-[55%] right-[15%] h-auto border-neutral-700 border-[4px] rounded-lg hover:scale-[200%] hover:z-20 transition ease-in duration-700 origin-bottom-right"
+              className="absolute z-10 w-[20%] bottom-[10%] portrait:bottom-0 left-[15%] h-auto border-neutral-700 border-[4px] rounded-lg hover:scale-[200%] hover:z-20 transition ease-in duration-700 origin-bottom-left"
               src="/ScreenRecorderProject9.mp4"
             />
           </div>
@@ -416,7 +426,10 @@ export default function Home() {
               />
             </svg>
           </div>
-          <div className="col-start-7 col-end-8 row-start-5 row-end-7 landscape:col-start-7 landscape:col-end-9 landscape:row-start-7 landscape:row-end-8 rounded-full bg-white bg-opacity-[2%] rotate-90 flex items-center justify-center">
+          <div
+            className="col-start-7 col-end-8 row-start-5 row-end-7 landscape:col-start-7 landscape:col-end-9 landscape:row-start-7 landscape:row-end-8 rounded-full bg-white bg-opacity-[2%] rotate-90 flex items-center justify-center transition ease-out duration-500 hover:border hover:border-white hover:border-opacity-20 hover:bg-opacity-5 cursor-pointer"
+            onClick={scroll}
+          >
             scroll
             <div className="line" />
           </div>
