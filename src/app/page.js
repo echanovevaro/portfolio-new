@@ -266,9 +266,9 @@ export default function Home() {
             <div className="bouncing-blob bouncing-blob--blue" />
           </div>
         </div>
-        <div className="text-white  font-extralight absolute landscape:w-[calc(47*80vh/21)] w-[calc(21*80vh/39)] h-[80vh] top-[10%] landscape:left-[5vw] left-2 grid landscape:grid-cols-[8fr_1fr_1fr_3fr_21fr_8fr_5fr] landscape:grid-rows-[5fr_1fr_2fr_5fr_3fr_5fr] grid-cols-[5fr_1fr_2fr_5fr_1fr_2fr_5fr] grid-rows-[8fr_2fr_3fr_21fr_2fr_3fr] overflow-hidden">
+        <div className="text-white  font-extralight absolute landscape:w-[calc(47*80vh/21)] w-[calc(21*80vh/39)] h-[80vh] top-[10%] landscape:left-[5vw] left-2 grid landscape:grid-cols-[8fr_1fr_1fr_3fr_21fr_8fr_5fr] landscape:grid-rows-[5fr_1fr_2fr_5fr_3fr_5fr] grid-cols-[5fr_1fr_2fr_5fr_1fr_2fr_5fr] grid-rows-[8fr_2fr_3fr_21fr_2fr_3fr]">
           <div className="col-start-1 col-end-4 row-start-1 row-end-2 landscape:col-start-1 landscape:col-end-2 landscape:row-start-1 landscape:row-end-4 rounded-full bg-white bg-opacity-15 flex items-center justify-end border border-neutral-700 shadow-md">
-            <h1 className="landscape:mr-10 mr-4 tracking-wider landscape:mt-[2rem] mt-[0.5rem] uppercase lg:text-lg text-sm">
+            <h1 className="landscape:mr-10 mr-4 landscape:mt-[2rem] mt-[0.5rem] uppercase lg:text-base text-sm">
               <span className="font-medium">álvaro</span> riaño
             </h1>
           </div>
@@ -289,15 +289,16 @@ export default function Home() {
             <div className="text lg:text-2xl text-lg font-extralight absolute top-[59%] left-[10%]" />
           </div>
           <div className="col-start-6 col-end-7 row-start-5 row-end-6 landscape:col-start-6 landscape:col-end-7 landscape:row-start-5 landscape:row-end-7 rounded-full border border-white border-opacity-20"></div>
-          <div className="line col-start-7 col-end-8 row-start-5 row-end-7 landscape:col-start-7 landscape:col-end-8 landscape:row-start-6 landscape:row-end-7 rounded-full bg-white bg-opacity-[2%] rotate-90 flex items-center justify-center">
+          <div className="col-start-7 col-end-8 row-start-5 row-end-7 landscape:col-start-7 landscape:col-end-8 landscape:row-start-6 landscape:row-end-7 rounded-full bg-white bg-opacity-[2%] rotate-90 flex items-center justify-center">
             scroll
+            <div className="line" />
           </div>
         </div>
       </section>
       <section className="w-full h-[100vh] text-sm">
         <div className="text-white  font-extralight absolute landscape:w-[calc(47*80vh/21)] w-[calc(21*80vh/39)] h-[80vh] top-[110vh] landscape:left-[5vw] left-2 grid landscape:grid-cols-[8fr_1fr_1fr_3fr_21fr_8fr_2fr_3fr] landscape:grid-rows-[5fr_1fr_2fr_5fr_2fr_1fr_5fr] grid-cols-[5fr_1fr_2fr_5fr_1fr_2fr_5fr] grid-rows-[8fr_2fr_3fr_21fr_2fr_3fr]">
           <div className="col-start-1 col-end-4 row-start-1 row-end-2 landscape:col-start-1 landscape:col-end-2 landscape:row-start-1 landscape:row-end-4 rounded-full bg-white bg-opacity-15 flex items-center justify-end border border-neutral-700 shadow-md">
-            <h1 className="landscape:mr-10 mr-4 tracking-wider landscape:mt-[2rem] mt-[0.5rem] uppercase lg:text-lg text-sm">
+            <h1 className="landscape:mr-10 mr-4 landscape:mt-[2rem] mt-[0.5rem] uppercase lg:text-base text-sm">
               <span className="font-medium">álvaro</span> riaño
             </h1>
           </div>
@@ -331,7 +332,7 @@ export default function Home() {
               playsInline
               loop
               preload="auto"
-              className="absolute z-10 w-[70%] top-[50%] left-0 h-auto border-neutral-700 border-[6px] rounded-lg transition ease-in duration-700 origin-bottom-left"
+              className="absolute z-10 w-[70%] top-[50%] left-0 h-auto border-neutral-700 border-[4px] rounded-lg transition ease-in duration-700 origin-bottom-left"
               src="/ScreenRecorderProject7 (online-video-cutter.com) (1).mp4"
             />
             <div
@@ -347,7 +348,7 @@ export default function Home() {
               playsInline
               loop
               preload="auto"
-              className="absolute z-[1] w-[90%] top-[10%] right-0 h-auto border-neutral-700 border-[6px] rounded-lg hover:scale-110 hover:z-20 transition ease-in duration-700"
+              className="absolute z-[1] w-[90%] top-[10%] right-0 h-auto border-neutral-700 border-[4px] rounded-lg hover:scale-110 hover:z-20 transition ease-in duration-700"
               src="/ScreenRecorderProject5_1.mp4"
             />
 
@@ -358,7 +359,7 @@ export default function Home() {
               playsInline
               loop
               preload="auto"
-              className="absolute z-10 w-[20%] top-[55%] right-[15%] h-auto border-neutral-700 border-[6px] rounded-lg hover:scale-150 hover:z-20 transition ease-in duration-700 origin-bottom-right"
+              className="absolute z-10 w-[20%] top-[55%] right-[15%] h-auto border-neutral-700 border-[4px] rounded-lg hover:scale-[200%] hover:z-20 transition ease-in duration-700 origin-bottom-right"
               src="/ScreenRecorderProject9.mp4"
             />
           </div>
@@ -415,8 +416,9 @@ export default function Home() {
               />
             </svg>
           </div>
-          <div className="line col-start-7 col-end-8 row-start-5 row-end-7 landscape:col-start-7 landscape:col-end-9 landscape:row-start-7 landscape:row-end-8 rounded-full bg-white bg-opacity-[2%] rotate-90 flex items-center justify-center">
+          <div className="col-start-7 col-end-8 row-start-5 row-end-7 landscape:col-start-7 landscape:col-end-9 landscape:row-start-7 landscape:row-end-8 rounded-full bg-white bg-opacity-[2%] rotate-90 flex items-center justify-center">
             scroll
+            <div className="line" />
           </div>
         </div>
       </section>
