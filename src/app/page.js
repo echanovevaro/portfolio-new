@@ -336,13 +336,12 @@ export default function Home() {
             /> */}
 
             <video
-              id="video"
               autoPlay
               muted
               playsInline
               loop
               preload="auto"
-              className="absolute z-10 w-[70%] top-[40%] portrait:top-[45%] right-[5%] h-auto border-neutral-700 border-[4px] rounded-lg transition ease-in duration-700 origin-bottom-right"
+              className="absolute z-10 w-[70%] top-[40%] portrait:top-[45%] right-[5%] h-auto border-neutral-700 border-[4px] rounded-lg hover:scale-[130%] hover:z-20  transition ease-in duration-700 origin-bottom-right"
               src="/ScreenRecorderProject7 (online-video-cutter.com) (1).mp4"
             />
             <div
@@ -352,18 +351,16 @@ export default function Home() {
               {" "}
             </div>
             <video
-              id="video2"
               autoPlay
               muted
               playsInline
               loop
               preload="auto"
-              className="absolute z-[1] w-[80%] top-[10%] right-[20%] h-auto border-neutral-700 border-[4px] rounded-lg hover:scale-125 hover:z-20 transition ease-in duration-700 origin-top-left"
+              className="absolute z-[1] w-[80%] top-[10%] right-[20%] portrait:right-[15%] h-auto border-neutral-700 border-[4px] rounded-lg hover:scale-125 hover:z-20 transition ease-in duration-700 origin-top-left"
               src="/ScreenRecorderProject5_1.mp4"
             />
 
             <video
-              id="video3"
               autoPlay
               muted
               playsInline
