@@ -274,13 +274,13 @@ export default function Home() {
           </div>
         </div>
         <div className="text-white  font-extralight absolute landscape:w-[calc(47*80vh/21)] w-[calc(21*80vh/39)] h-[80vh] top-[10%] landscape:left-[5vw] left-2 grid landscape:grid-cols-[8fr_1fr_1fr_3fr_21fr_8fr_5fr] landscape:grid-rows-[5fr_1fr_2fr_5fr_3fr_5fr] grid-cols-[5fr_1fr_2fr_5fr_1fr_2fr_5fr] grid-rows-[8fr_2fr_3fr_21fr_2fr_3fr]">
-          <div className="col-start-1 col-end-4 row-start-1 row-end-2 landscape:col-start-1 landscape:col-end-2 landscape:row-start-1 landscape:row-end-4 rounded-full bg-white bg-opacity-15 flex items-center justify-end border border-neutral-700 shadow-md">
-            <h1 className="landscape:mr-10 mr-4 landscape:mt-[2rem] mt-[0.5rem] uppercase lg:text-base text-sm">
-              <span className="font-medium">álvaro</span> riaño
+          <div className="col-start-1 col-end-4 row-start-1 row-end-2 landscape:col-start-1 landscape:col-end-2 landscape:row-start-1 landscape:row-end-4 rounded-full bg-white bg-opacity-15 border border-neutral-700 shadow-md portrait:flex portrait:items-center portrait:justify-center">
+            <h1 className="landscape:ml-[35%] landscape:mt-[50%] uppercase lg:text-base text-[0.75rem]">
+              <span className="font-medium ">álvaro</span> riaño
             </h1>
           </div>
-          <div className="col-start-4 col-end-8 row-start-1 row-end-4 landscape:col-start-1 landscape:col-end-5 landscape:row-start-4 landscape:row-end-8 rounded-full bg-white bg-opacity-[2%] flex items-start justify-center">
-            <div className="landscape:pt-[6rem] portrait:pt-[8rem] uppercase lg:text-lg text-sm portrait:flex portrait:flex-col portrait:items-end portrait:justify-center">
+          <div className="col-start-4 col-end-8 row-start-1 row-end-4 landscape:col-start-1 landscape:col-end-5 landscape:row-start-4 landscape:row-end-8 rounded-full bg-white bg-opacity-[2%] portrait: flex items-start justify-center">
+            <div className="landscape:ml-[6%] landscape:pt-[30%] pt-[50%] uppercase lg:text-lg text-sm portrait:flex portrait:flex-col portrait:items-end portrait:justify-center">
               <h1>
                 <span className="font-medium ">web</span> developer
               </h1>
@@ -293,7 +293,7 @@ export default function Home() {
           <div className="col-start-2 col-end-4 row-start-3 row-end-4 rounded-full bg-white bg-opacity-50"></div>
           <div className="portrait:hidden col-start-4 col-end-5 row-start-2 row-end-4 rounded-full border border-white border-opacity-20"></div>
           <div className="col-start-1 col-end-8 row-start-4 row-end-5 landscape:col-start-5 landscape:col-end-6 landscape:row-start-1 landscape:row-end-8 rounded-full border border-white border-opacity-20 relative">
-            <div className="text lg:text-2xl text-lg font-extralight absolute top-[59%] left-[10%]" />
+            <div className="text lg:text-2xl text-lg font-extralight absolute landscape:top-[62%] top-[59%] left-[10%]" />
           </div>
           <div className="col-start-6 col-end-7 row-start-5 row-end-6 landscape:col-start-6 landscape:col-end-7 landscape:row-start-5 landscape:row-end-7 rounded-full border border-white border-opacity-20"></div>
           <div
@@ -307,20 +307,21 @@ export default function Home() {
       </section>
       <section className="w-full h-[100vh] text-sm">
         <div className="text-white  font-extralight absolute landscape:w-[calc(47*80vh/21)] w-[calc(21*80vh/39)] h-[80vh] top-[110vh] landscape:left-[5vw] left-2 grid landscape:grid-cols-[8fr_1fr_1fr_3fr_21fr_8fr_2fr_3fr] landscape:grid-rows-[5fr_1fr_2fr_5fr_2fr_1fr_5fr] grid-cols-[5fr_1fr_2fr_5fr_1fr_2fr_5fr] grid-rows-[8fr_2fr_3fr_21fr_2fr_3fr]">
-          <div className="col-start-1 col-end-4 row-start-1 row-end-2 landscape:col-start-1 landscape:col-end-2 landscape:row-start-1 landscape:row-end-4 rounded-full bg-white bg-opacity-15 flex items-center justify-end border border-neutral-700 shadow-md">
-            <h1 className="landscape:mr-10 mr-4 landscape:mt-[2rem] mt-[0.5rem] uppercase lg:text-base text-sm">
-              <span className="font-medium">álvaro</span> riaño
+          <div className="col-start-1 col-end-4 row-start-1 row-end-2 landscape:col-start-1 landscape:col-end-2 landscape:row-start-1 landscape:row-end-4 rounded-full bg-white bg-opacity-15 border border-neutral-700 shadow-md portrait:flex portrait:items-center portrait:justify-center">
+            <h1 className="landscape:ml-[35%] landscape:mt-[50%] uppercase lg:text-base text-[0.75rem]">
+              <span className="font-medium ">álvaro</span> riaño
             </h1>
           </div>
-          <div className="landscape:ps-[6rem] landscape:pt-[6rem] ps-[4rem] pt-[2rem] col-start-4 col-end-8 row-start-1 row-end-4 landscape:col-start-1 landscape:col-end-5 landscape:row-start-4 landscape:row-end-8 rounded-full bg-white bg-opacity-[2%] flex flex-col items-start justify-start">
+          <div className="landscape:ps-[20%] landscape:pt-[17%] ps-[25%] pt-[18%] col-start-4 col-end-8 row-start-1 row-end-4 landscape:col-start-1 landscape:col-end-5 landscape:row-start-4 landscape:row-end-8 rounded-full bg-white bg-opacity-[2%] flex flex-col items-start justify-start">
             <h1 className="lg:text-5xl text-3xl uppercase block text-neutral-400">
               works
             </h1>
-            <h2 className="lg:text-2xl uppercase block my-2">
+            <h2 className="lg:text-1xl font-normal uppercase block my-1">
               HECTOROMERO ART
             </h2>
-            <p className="landscape:mr-20">
+            <p className="mr-[5%] portrait:text-[0.7rem]">
               lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              tristique, nunc nec vulputate tristique,
             </p>
           </div>
           <div className="col-start-3 col-end-4 row-start-2 row-end-3 landscape:col-start-2 landscape:col-end-3 landscape:row-start-2 landscape:row-end-3 rounded-full border border-white border-opacity-20"></div>
