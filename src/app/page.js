@@ -4,6 +4,9 @@ import { useCallback, useEffect, useState } from "react"
 
 export default function Home() {
   const [filter, setFilter] = useState("blur-dark")
+  const [isLoading1, setIsLoading1] = useState(true)
+  const [isLoading2, setIsLoading2] = useState(true)
+  const [isLoading3, setIsLoading3] = useState(true)
 
   const onScroll = useCallback(
     (event) => {
@@ -335,7 +338,11 @@ export default function Home() {
               src={`/desktop-computer-laptop-tablet-and-smartphone-psd.png`}
               alt="hectoromero"
             /> */}
-
+            {(isLoading1 || isLoading2 || isLoading3) && (
+              <div className="absolute z-30 w-full h-full flex items-center justify-center bg-white text-black">
+                Loading...
+              </div>
+            )}
             <video
               autoPlay
               muted
@@ -344,6 +351,10 @@ export default function Home() {
               preload="auto"
               className="absolute z-10 w-[70%] top-[40%] portrait:top-[45%] right-[5%] h-auto border-neutral-700 border-[4px] rounded-lg hover:scale-[130%] hover:z-20  transition ease-in duration-700 origin-bottom-right"
               src="/ScreenRecorderProject7 (online-video-cutter.com) (1).mp4"
+              onCanPlayThrough={() => {
+                console.log("loaded1")
+                setIsLoading1(false)
+              }}
             />
             <div
               className="transition ease-out duration-700 absolute z-[1] w-full h-full rounded-full landscape:bg-white landscape:bg-opacity-[5%] border border-white border-opacity-20 backdrop-blur"
@@ -359,6 +370,10 @@ export default function Home() {
               preload="auto"
               className="absolute z-[1] w-[85%] top-[15%] right-[15%] portrait:right-[10%] h-auto border-neutral-700 border-[4px] rounded-lg hover:scale-125 hover:z-20 transition ease-in duration-700 origin-top-left"
               src="/ScreenRecorderProject5_1.mp4"
+              onCanPlayThrough={() => {
+                console.log("loaded2")
+                setIsLoading2(false)
+              }}
             />
 
             <video
@@ -367,8 +382,12 @@ export default function Home() {
               playsInline
               loop
               preload="auto"
-              className="absolute z-10 w-[23%] bottom-[15%] portrait:bottom-0 left-[15%] h-auto border-neutral-700 border-[4px] rounded-lg hover:scale-[200%] hover:z-20 transition ease-in duration-700 origin-bottom-left"
+              className="absolute z-10 w-[23%] bottom-[10%] portrait:bottom-0 left-[15%] h-auto border-neutral-700 border-[4px] rounded-lg hover:scale-[200%] hover:z-20 transition ease-in duration-700 origin-bottom-left"
               src="/ScreenRecorderProject9.mp4"
+              onCanPlayThrough={() => {
+                console.log("loaded3")
+                setIsLoading3(false)
+              }}
             />
           </div>
           <div className="portrait:hidden col-start-6 col-end-7 row-start-5 row-end-8 rounded-full border border-white border-opacity-20 flex items-center justify-center gap-2 text-lg">
