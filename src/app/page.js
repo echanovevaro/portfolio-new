@@ -4,9 +4,6 @@ import { useCallback, useEffect, useState } from "react"
 
 export default function Home() {
   const [filter, setFilter] = useState("blur-dark")
-  const [isLoading1, setIsLoading1] = useState(true)
-  const [isLoading2, setIsLoading2] = useState(true)
-  const [isLoading3, setIsLoading3] = useState(true)
 
   const onScroll = useCallback(
     (event) => {
@@ -344,19 +341,11 @@ export default function Home() {
               muted
               playsInline
               loop
-              className={`absolute z-10 w-[70%] top-[40%] portrait:top-[45%] right-[5%] h-auto ${
-                !isLoading1
-                  ? "border-neutral-700 border-[4px] video-shadow"
-                  : ""
-              } rounded-lg hover:scale-[130%] hover:z-20  transition ease-in duration-700 origin-bottom-right`}
-              onCanPlay={(e) => {
-                if (isLoading1) {
-                  setIsLoading1(false)
-                }
-              }}
+              poster="/carrusel.png"
+              className={`absolute z-10 w-[70%] top-[40%] portrait:top-[45%] right-[5%] h-auto border-neutral-700 border-[4px] video-shadow rounded-lg hover:scale-[130%] hover:z-20  transition ease-in duration-700 origin-bottom-right`}
             >
               <source
-                src="/ScreenRecorderProject7 (online-video-cutter.com) (1).mp4"
+                src="/carrusel.mp4"
                 type="video/mp4"
               />
             </video>
@@ -371,19 +360,11 @@ export default function Home() {
               muted
               playsInline
               loop
-              className={`absolute z-[1] w-[85%] top-[15%] right-[15%] portrait:right-[10%] h-auto ${
-                !isLoading2
-                  ? "border-neutral-700 border-[4px] video-shadow"
-                  : ""
-              } rounded-lg hover:scale-125 hover:z-20 transition ease-in duration-700 origin-top-left`}
-              onCanPlay={(e) => {
-                if (isLoading2) {
-                  setIsLoading2(false)
-                }
-              }}
+              poster="/scroll-pantallas.png"
+              className={`absolute z-[1] w-[85%] top-[15%] right-[15%] portrait:right-[10%] h-auto border-neutral-700 border-[4px] video-shadow rounded-lg hover:scale-125 hover:z-20 transition ease-in duration-700 origin-top-left`}
             >
               <source
-                src="/ScreenRecorderProject5_1.mp4"
+                src="/scroll-pantallas.mp4"
                 type="video/mp4"
               />
             </video>
@@ -393,20 +374,12 @@ export default function Home() {
               muted
               playsInline
               loop
-              className={`absolute z-10 w-[23%] bottom-[10%] portrait:bottom-0 left-[15%] h-auto ${
-                !isLoading3
-                  ? "border-neutral-700 border-[4px] video-shadow"
-                  : ""
-              } rounded-lg hover:scale-[200%] hover:z-20 transition ease-in duration-700 origin-bottom-left`}
-              src="/ScreenRecorderProject9.mp4"
-              onCanPlay={(e) => {
-                if (isLoading3) {
-                  setIsLoading3(false)
-                }
-              }}
+              poster="/movil.png"
+              className={`absolute z-10 w-[23%] bottom-[10%] portrait:bottom-0 left-[15%] h-auto border-neutral-700 border-[4px] video-shadow
+              rounded-lg hover:scale-[200%] hover:z-20 transition ease-in duration-700 origin-bottom-left`}
             >
               <source
-                src="/ScreenRecorderProject9.mp4"
+                src="/movil.mp4"
                 type="video/mp4"
               />
             </video>
